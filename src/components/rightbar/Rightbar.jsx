@@ -9,6 +9,8 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import RemoveCircleOutline from "@mui/icons-material/RemoveCircleOutline";
 
+axios.defaults.baseURL = 'https://socialize-backend-nmng.onrender.com/api';
+
 export default function Rightbar({ user }) {
 
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;

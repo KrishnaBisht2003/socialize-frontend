@@ -4,7 +4,10 @@ import Share from '../share/Share';
 import Post from '../post/Post';
 // import {Posts} from '../../dummyData';
 import axios from "axios";
+
 import { AuthContext } from '../../context/AuthContext';
+
+axios.defaults.baseURL = 'https://socialize-backend-nmng.onrender.com/api';
 
 
 export default function Feed({ username }) {

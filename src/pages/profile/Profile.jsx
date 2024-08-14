@@ -8,6 +8,8 @@ import axios from "axios";
 
 import './profile.css'
 
+axios.defaults.baseURL = 'https://socialize-backend-nmng.onrender.com/api';
+
 export default function Profile() {
 
   const [user, setUser] = useState({});

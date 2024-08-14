@@ -3,11 +3,12 @@ import "./post.css"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 // import {Users} from '../../dummyData';
 import axios from "axios";
+
 import { format } from "timeago.js";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 
-
+axios.defaults.baseURL = 'https://socialize-backend-nmng.onrender.com/api';
 
 export default function Post({ post }) {
     const {user: currentUser } = useContext(AuthContext);

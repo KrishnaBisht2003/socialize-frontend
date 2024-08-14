@@ -8,6 +8,7 @@ import { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 
+axios.defaults.baseURL = 'https://socialize-backend-nmng.onrender.com/api';
 
 export default function Share() {
 

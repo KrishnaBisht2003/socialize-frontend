@@ -3,6 +3,8 @@ import {useRef} from 'react';
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 
+axios.defaults.baseURL = 'https://socialize-backend-nmng.onrender.com/api';
+
 export default function Login() {
     const username = useRef();
     const email = useRef();

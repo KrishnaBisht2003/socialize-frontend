@@ -1,4 +1,6 @@
 import axios from "axios";
+axios.defaults.baseURL = 'https://socialize-backend-nmng.onrender.com/api';
+
 
 export const loginCall = async (userCredential, dispatch) => {
   dispatch({ type: "LOGIN_START" });
