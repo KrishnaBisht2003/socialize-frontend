@@ -3,13 +3,14 @@ import Profile from './pages/profile/Profile';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 // import HomeIcon from '@mui/icons-material/Home';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Navigate,
 
-} from "react-router-dom";
+// } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
